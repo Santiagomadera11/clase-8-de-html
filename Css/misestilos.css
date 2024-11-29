@@ -1,0 +1,43 @@
+.logo{grid-area:logo;}
+.header{grid-area:header; }
+.topnav{grid-area:nav;}
+.main{grid-area:main;
+height: 100px;
+}
+.article{grid-area:article;}
+.footer{grid-area:footer;}
+
+
+
+.grid-container{
+background-color: cornflowerblue;
+border-color:1px solid black;
+border-radius: 5px;
+padding: 5px;
+display: grid;
+grid-template-areas:'logo header header header header '
+'nav nav nav nav nav '
+' main main main main main'
+'footer footer footer footer footer';
+}
+/*grid-template-areas: 'header header header header header'
+                     'nav main   main   main   article'
+                     'nav footer footer footer footer';}*/
+
+.grid-container div {
+background-color: rgb(236, 234, 234);
+border:5px solid rgb(168, 14, 14);
+
+}
+.header{
+    font-family: "Lucida Console", "Courier New", monospace;
+    direction: rtl;
+        
+}
+
+.nombre{
+    text-align: left;
+    text-shadow: 2px 2px red;
+    none {border-style: none;}
+}
+
